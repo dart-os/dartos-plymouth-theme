@@ -5,7 +5,7 @@ dartos-plymouth-theme for Debian
 -------------------------------
 ## Package:
 Package: dartos-plymouth-theme    
-Version: 0.1~alpha
+Version: 0.1~alpha-1
 Arch: all
 Section: base
 

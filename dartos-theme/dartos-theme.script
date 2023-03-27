@@ -401,15 +401,15 @@ logo.SetOpacity_(0);
 Spinner = fun() {
     // FIXME: try to use this=
     spinner = global.Spinner | [];
-    spinner.count = 91;
+    spinner.count = 900;
     spinner.current_idx = 0;
     spinner.last_time = 0;
     spinner.steps = 10.0; // We render degrees in increments of 10 to save disk.
     spinner.duration = 1.5; // Seconds per rotation.
     for (i = 0; i <= spinner.count; ++i) {
-        //if (i % spinner.steps != 0) {
-        //    continue;
-        //}
+        if (i % spinner.steps != 0) {
+            continue;
+        }
         spinner[i] = SpriteImage(assets.throbber_base + i + ".png");
         center_offset = (logo.width / 2) - (spinner[i].width / 2);
         top_offset = logo.height + spinner[i].height;
@@ -486,7 +486,7 @@ Plymouth.SetBootProgressFunction (boot_progress_cb);
 perfont = "Ubuntu Regular 11";
 per.image = Image.Text ("DART OS",0.5,0.5,0.5,1, perfont);
 per.sprite = Sprite(per.image);
-per.x = Window.GetX() + Window.GetWidth()  / 1 - per.image.GetWidth() / 0.95;
+per.x = Window.GetX() + Window.GetWidth()  / 2 - per.image.GetWidth() / 2;
 per.y = Window.GetY() + Window.GetHeight() / 1.01  - per.image.GetHeight() / 1;
 per.sprite.SetPosition(per.x, per.y, 2);
 ################################################################################
