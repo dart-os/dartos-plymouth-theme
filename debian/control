@@ -1,0 +1,16 @@
+Source: dartos-plymouth-theme
+Section: base
+Priority: optional
+Maintainer: Arijit Bhowmick <cybersec.arijitbhowmick@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.1
+Homepage: https://gitlab.com/dart-os/packages/dartos-plymouth-theme
+
+Package: dartos-plymouth-theme
+Architecture: all
+Depends:
+ ${misc:Depends},
+ plymouth (>= 0.8.8)
+Description: Official Plymouth Theme for Dart OS

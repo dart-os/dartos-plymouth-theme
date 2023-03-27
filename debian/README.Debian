@@ -1,0 +1,26 @@
+# Official Dart OS Plymouth Theme
+
+
+dartos-plymouth-theme for Debian
+-------------------------------
+## Package:
+Package: dartos-plymouth-theme    
+Version: 0.1~alpha
+Arch: all
+Section: base
+
+---
+
+Copyright (C) 2023 Arijit Bhowmick <cybersec.arijitbhowmick@gmail.com>
+License: GPL-3.0+
+Author: Arijit Bhowmick
+Dependency: plymouth
+
+---
+
+<hr>
+<p align="center">
+Developed with ❤️
+</p>
+
+ -- Arijit Bhowmick <cybersec.arijitbhowmick@gmail.com>  Sun, 26 Mar 2023 12:03:29 +0530

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# postinst script for dartos-plymouth-theme.
+
+set -e
+
+update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/dartos-theme/dartos-theme.plymouth 5118
+update-initramfs -u
+
+exit 0
