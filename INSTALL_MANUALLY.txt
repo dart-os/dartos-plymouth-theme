@@ -1,9 +1,0 @@
-1) Copy the theme folder --> /usr/share/plymouth/themes/.
-2) sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/dartos-theme/dartos-theme.plymouth 5118
-3) sudo update-alternatives --config default.plymouth
-4) Select the desired item with the theme.
-5) sudo update-initramfs -u
-
-# Check the current plymouth animation
-# package required: plymouth (>=0.8.8), plymouth-x11
-# sudo plymouthd ; sudo plymouth --show-splash ; sleep 10 ; sudo killall plymouthd
